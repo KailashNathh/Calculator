@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+        background-color: cyan;
+        height: 230px;
+        }
+    </style>
+    <script>
+    function adding() { 
+    var v1 = parseInt(document.getElementById("textVal1").value); 
+    var v2 = parseInt(document.getElementById('textVal2').value);
+    document.getElementById("result").value = v1+v2;
+   }
+  
+   function subtraction() { 
+    var v1 = parseInt(document.getElementById("textVal1").value); 
+    var v2 = parseInt(document.getElementById('textVal2').value);
+    document.getElementById("result").value = v1-v2;
+   }
+  
+   function multiplication() { 
+    var v1 = parseInt(document.getElementById("textVal1").value); 
+    var v2 = parseInt(document.getElementById('textVal2').value);
+    document.getElementById("result").value = v1*v2;
+  }
+  
+   function division() { 
+    var v1 = parseInt(document.getElementById("textVal1").value); 
+    var v2 = parseInt(document.getElementById('textVal2').value);
+    document.getElementById("result").value = v1/v2;
+   }
+  
+   function remainder() { 
+    var v1 = parseInt(document.getElementById("textVal1").value); 
+    var v2 = parseInt(document.getElementById('textVal2').value);
+    document.getElementById("result").value = v1%v2;
+   }
+    </script>
+</head>
+<body>
+    
+     <div class="con">
+        <h1 style="text-align: center;">Simple Caculator using JS</h1>
+        <hr>
+        <center> 
+        <table  >
+        <tr>
+            <td  > 
+            <label for="">Enter first value  </label>
+            <td><input type="text" id="textVal1" value=""></td>
+        </td>
+        </tr>
+        <tr>
+            <td  > 
+             Enter second value   
+            <td>
+                <input type="text" id="textVal2" value="">
+            </td>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="">
+                <label for="">Result   </label>
+                 <td> <input type="text" id="result" value="" ></td>
+            </td>
+        </tr>
+        <tr>
+            <td  ><input type="submit"    onClick="adding()" value="+"> 
+        <input type="submit"   onClick="subtraction()" value="-">
+       <input type="submit"   onClick="multiplication()" value="*"> 
+       <input type="submit"   onClick="division()" value="/"> 
+       <input type="submit"   onClick="remainder()" value="%"></td>
+         </tr>
+        </table>
+        <hr>
+    </center>
+     
+     </div>
+</body>
+</html>
